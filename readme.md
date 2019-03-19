@@ -11,6 +11,6 @@
 - [Section-1](http://bit.ly/2BIvF2J)
 
 
-###### Video Tutorial
+###### Tutorials
 - [React-Redux](http://bit.ly/2BW25Hd)
 
