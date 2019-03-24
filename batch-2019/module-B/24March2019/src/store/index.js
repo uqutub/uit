@@ -5,10 +5,12 @@ import { combineReducers, createStore } from 'redux';
 
 // reducers
 import { CounterReducer } from './reducer/counter';
+import { TodoReducer } from './reducer/todo';
 
 // Application Reducers
 const rootReducer = combineReducers({
-    CounterReducer: CounterReducer
+    CounterReducer: CounterReducer,
+    TodoReducer
 });
 
 export let store = createStore(rootReducer);
