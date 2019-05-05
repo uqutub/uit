@@ -27,6 +27,7 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   render() {
+    // console .log("Hellooo")
     return (
       <View style={{ flex: 1, }}>
         <Text>Home Page</Text>
