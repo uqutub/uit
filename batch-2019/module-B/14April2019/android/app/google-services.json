@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "128524372583",
+    "firebase_url": "https://uitlab.firebaseio.com",
+    "project_id": "uitlab",
+    "storage_bucket": "uitlab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128524372583:android:94b34732144b08ab",
+        "android_client_info": {
+          "package_name": "com.uitlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128524372583-4vjeua976v6oq3r51bck3q5rfv9891gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3o2h7t6BTK_RaMyTjA1r6HGr0oRFS6CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128524372583-4vjeua976v6oq3r51bck3q5rfv9891gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
