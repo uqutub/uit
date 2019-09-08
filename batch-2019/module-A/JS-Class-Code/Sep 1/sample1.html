@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function greetUser() {
+            alert("Hello World!");
+        }
+
+        // greetUser();
+        // greetUser();
+        // greetUser();
+
+        var c = 5;
+        function sum1() {
+            var a = 2; // Local Var
+            var b = 4;
+            alert(c) // Global Var
+            alert(a + b);
+        }
+
+        // alert(a); //Not Defined; Ref Error
+        // sum1();
+
+        var username = 'Ali';
+        function greetUser2() {
+            alert("Hello " + username);
+        }
+        greetUser2();
+        greetUser2();
+    </script>
+</body>
+
+</html>
