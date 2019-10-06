@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function loginUser(){
+            var usernameRef = document.getElementById("username");
+            var passwordRef = document.getElementById("password");
+            alert("Username: "+ usernameRef.value +"\n Password: "+ passwordRef.value);
+
+            usernameRef.value = "";
+            passwordRef.value = "";
+        }    
+    </script>
+    <form onsubmit="loginUser()" action="javascript:void(0);">
+        <label>
+            Enter username:
+            <input type="text" id="username" required>
+        </label>
+        <br />
+        <label>
+            Enter password:
+            <input type="password" id="password" required/>
+        </label>
+        <br/>
+        <input type="submit" />
+    </form>
+</body>
+
+</html>

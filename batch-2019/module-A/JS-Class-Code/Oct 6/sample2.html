@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function getFullName(){
+            var cityRef =  document.getElementById("city");
+            console.log(cityRef);
+
+            switch(cityRef.value.toLowerCase()){
+                case "isl":{
+                    alert("Islamabad");
+                    break;
+                }
+                case "khi":{
+                    alert("Karachi");
+                    break;
+                }
+                case "lhr":{
+                    alert("Lahore");
+                    break;
+                }
+                default: 
+                    alert("City does not exists in our list!");
+            }
+        }    
+    </script>
+    <label>
+        Enter City:
+        <input type="text" id="city" onblur="getFullName()"/>
+    </label>
+</body>
+</html>

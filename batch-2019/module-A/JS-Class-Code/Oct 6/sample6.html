@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function fun1() {
+            document.getElementById("img1").src = "panacloud.png"
+        }
+        function fun2() {
+            document.getElementById("img1").src = "dummy.png"
+        }
+
+        function swap(swapImage) {
+            document.getElementById("img2").src = swapImage;
+        }
+
+        function smartSwap(elemRef, swapImage) {
+            console.log(elemRef);
+            elemRef.src = swapImage;
+        }
+    </script>
+
+    <img src="dummy.png" onmouseover="fun1()" onmouseout="fun2()" id="img1" />
+
+    <img src="panacloud.png" onmouseout="swap('panacloud.png')" onmouseover="swap('dummy.png')" id="img2" />
+
+    <img src="panacloud.png" onmouseout="smartSwap(this,'panacloud.png')" onmouseover="smartSwap(this,'dummy.png')" />
+
+    <img src="panacloud.png" onmouseout="this.src='panacloud.png'" onmouseover="this.src='dummy.png'" />
+</body>
+
+</html>
