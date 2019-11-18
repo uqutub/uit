@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function Student(stdName, stdAge, stdMarks){
+            this.name = stdName;
+            this.age = stdAge;
+            this.totalMarks = 500;
+            this.marksObtain = stdMarks;
+            this.percentage = '';
+            this.calculatePercentage = function () {
+                var result = ((this.marksObtain / this.totalMarks)*100).toFixed(1)
+                this.percentage = result+"%"
+            }
+        }
+
+        var student1 = new Student("Ali", 12, 400);
+        var student2 = new Student("Khan", 13, 420);
+        var student3 = new Student("Asad", 14, 440);
+        var student4 = new Student("Salik", 15, 440);
+
+        student1.calculatePercentage();
+        console.log(student1)
+        console.log(student2)
+        console.log(student3)
+
+    </script>
+</body>
+
+</html>

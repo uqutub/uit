@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student1 = {
+            name: "Ali",
+            gender: "Male",
+            totalMarks: 500,
+            marksObtain: 450,
+            percentage: ''
+        }
+
+        console.log(student1.name);
+        console.log(student1["name"]);
+
+        console.log("--------------------------")
+
+        for(var key in student1){
+            console.log("property name: " +key);
+            console.log("property value: "+student1[key]);
+        }
+    </script>
+</body>
+</html>
