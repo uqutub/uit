@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Promises
+        /*
+        new Promise(function (resolve, reject) {
+            //resolve() => Success state
+            //reject() => Failure state
+        })
+        */
+
+        function getStudents() {
+
+            var myPromise = new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    var students = ['a', 'b', 'c', 'd', 'e']
+                    console.log("I got some results");
+
+                    // Decide your success and failure state here!
+                    //..
+
+                    // resolve(students);
+                    reject("Sorry unable to get results!");
+                    //.. Do not do anything after resolve
+                }, 1000);
+            });
+            return myPromise;
+        }
+
+        getStudents().then(function (response) {
+
+            //Success state implementation
+            console.log("Inside success: ", response);
+
+        }).catch(function (error) {
+
+            // Failure state implementation
+            console.log("Inside error: ", error)
+        });
+
+    </script>
+</body>
+
+</html>
