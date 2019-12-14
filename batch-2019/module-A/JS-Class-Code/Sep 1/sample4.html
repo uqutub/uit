@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getResult(grade){
+            
+            switch(grade){
+                case "A+": 
+                case "A one":
+                case "A1":
+                    alert("Excellent");
+                    break;
+                case "A":
+                    alert("Good");
+                    break;
+                case "B":
+                    alert("Fair");
+                    break;
+                case "C":
+                    alert("Average");
+                    break;
+                default:
+                    alert("Prayers needed!");
+            }
+        }
+
+        getResult("A+")
+        getResult("A1")
+        getResult("D")
+        getResult("C")
+    </script>
+</body>
+</html>

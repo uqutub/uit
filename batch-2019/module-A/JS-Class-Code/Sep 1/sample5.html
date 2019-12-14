@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function printMarkSheet(numbers) {
+
+            switch (true) {
+                case (numbers >= 80 && numbers <= 100):
+                    alert("A1");
+                    break;
+                case numbers <= 79 && numbers >= 70:
+                    alert("A");
+                    break;
+                case numbers <= 69 && numbers >= 60:
+                    alert("B");
+                    break;
+                default:
+                    alert("Sorry!")
+            }
+        }
+
+        printMarkSheet(70)
+    </script>
+</body>
+
+</html>

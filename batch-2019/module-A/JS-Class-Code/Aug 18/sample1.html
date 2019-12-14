@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*
+     var userCity = prompt("Enter your city");
+
+     var changedCase = userCity.toLowerCase();
+     var changedUp = userCity.toUpperCase();
+    //  alert(changedCase)
+    //  alert(changedUp);
+     if(changedCase === 'karachi'){
+        //  alert("Hello");
+     }
+     else {
+        //  alert("You are not in Khi");
+     }
+     */
+
+     var cities = ["karachi", "islamabad", "lahore", "hyderabad"];
+     var userInputCity = prompt("Enter your city");
+     userInputCity = userInputCity.toLowerCase();
+
+     var isFound = false;
+
+     for(var i=0; i<cities.length; i++){
+         if(userInputCity === cities[i]){
+            //  alert("You are eligible");
+            //  break;
+            isFound = true;
+         }
+         else {
+            //  isFound = false;
+            //  alert("You are not eligible");
+         }
+     }
+
+     if(isFound === false){
+         alert("Event doesn't trigger")
+     }else {
+         alert("You got the answer");
+     }
+
+    </script>
+</body>
+</html>

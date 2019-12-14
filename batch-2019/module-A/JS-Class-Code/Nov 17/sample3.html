@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student1 = {
+            name: "Ali",
+            gender: "Male",
+            totalMarks: 500,
+            marksObtain: 450,
+            percentage: ''
+        }
+
+        var percentage = (student1.marksObtain / student1.totalMarks) *100 .toFixed(1);
+        student1.percentage = percentage + "%";
+
+        // console.log(student1);
+
+        var student2 = {
+            name: "Khan",
+            gender: "Male",
+            totalMarks: 500,
+            marksObtain: 350,
+            percentage: ''
+        }
+
+        var percentage = (student2.marksObtain / student2.totalMarks) *100 .toFixed(1);
+        student2.percentage = percentage + "%";
+
+        // console.log(student2);
+
+
+        var student3 = {
+            name: "Abrar",
+            gender: "Male",
+            totalMarks: 500,
+            marksObtain: 400,
+            percentage: '',
+            calculatePercentage: function(){
+                var result = ((student3.marksObtain / student3.totalMarks)*100).toFixed(1);
+                student3.percentage = result+"%";
+
+                // var result = ((this.marksObtain / this.totalMarks)*100).toFixed(1)
+                // this.percentage = result+"%"
+
+            }
+        }
+
+        student3.calculatePercentage();
+        // console.log(student3);
+
+
+        var student4 = {
+            name: "Sara",
+            gender: "Female",
+            totalMarks: 500,
+            percentage: '',
+            calculatePercentage: function(marks){
+                var result = ((marks/this.totalMarks)*100).toFixed(1);
+                return result+"%";
+            }
+        }
+        student4.percentage = student4.calculatePercentage(400);
+        console.log(student4)
+
+    </script>
+</body>
+</html>

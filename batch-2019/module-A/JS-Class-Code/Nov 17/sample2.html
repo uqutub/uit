@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = {
+            name: 'Ahmed',
+            age: 12,
+            courses:['AI', "BCC", "CNC", "JS"],
+            gender: "Male"
+        }
+
+        student.section = "Module B";
+        // console.log(student.courses[3]);
+        // console.log(student);
+
+        student.age = 13;
+        // console.log(student);
+
+        student.courses.push("IOT");
+        // console.log(student);
+
+        var isNameExist = "name" in student;
+        // alert(isNameExist) //True
+
+        var isClassTimings = "classTime" in student;
+        // alert(isClassTimings) // False
+
+        delete student.age;
+        console.log(student);
+
+    </script>
+</body>
+</html>

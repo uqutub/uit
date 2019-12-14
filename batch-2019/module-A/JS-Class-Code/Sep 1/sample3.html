@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum1(a, b) {
+            var c = a + b;
+            var d = c + 1;
+            return d;
+        }
+
+        var ans1 = sum1(2, 3);
+        // alert(ans1);
+        // alert(sum1(2,3))
+
+        function sum2(a, b) {
+            return a + b;
+        }
+
+        var ans2 = sum2(2, 4);
+        // alert(ans2);
+
+        var ans3 = sum2(3, 4);
+        // alert(ans3);
+
+        var ans4 = sum2(1, 2) + 5;
+        // 3 + 5
+        // alert(ans4);
+
+        var ans5 = sum2(1, 1) + sum2(3, 3);
+        // alert(ans5)
+
+        // var x1 = sum2(1,1);
+        // var x2 = sum2(3,3)
+        // var ans6 = x1 + x2;
+        // alert(ans6)
+
+        var ans6 = sum2(sum2(1, 2), 5);
+        //sum2(3, 5)
+        //8
+        // alert(ans6);
+
+        var a = 1;
+        var b = 3;
+
+        function sum4(x, y) {
+            return x + y
+        }
+
+        // alert(sum4(a,b));
+
+        function sum3(a, b) {
+            function changeType(num) {
+                return Number(num)
+            }
+            // alert(num) // NA
+            a = changeType(a);
+            b = changeType(b);
+            return a + b;
+        }
+
+        // alert(changeType("1")); // Not Available
+        alert(sum3("5", 2));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Last In First Out (LIFO)
+
+        var fruits = ["Mango", "Banana", "Cherry", "Gava", "Orange"];
+        fruits[3] = "Pineapple"; //Update
+        alert(fruits);
+        fruits[5] = "Apple";    //Add (Not Recommended)
+        alert(fruits);
+
+        fruits.push("Grapes"); // Recommended to add
+        alert(fruits);
+
+        fruits.push("Peach", "Kiwi");
+        alert(fruits);
+
+        fruits.pop()
+        alert(fruits);
+
+        var temp = fruits.pop()
+        alert(fruits);
+
+        alert(temp);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var marks = 100;
+        var marksObt = +prompt("Enter your marks");
+        var percentage = (marksObt / marks) * 100;
+        percentage = Math.round(percentage);
+
+        if (percentage >= 80) {
+            alert("A+ grade");
+        }
+        else if (percentage >= 70 && percentage <= 79) {
+            alert("A Grade");
+        }
+        else if (percentage >= 60 && percentage <= 69) {
+            alert("B grade")
+        }
+        else alert("Try again!");
+
+    </script>
+</body>
+
+</html>

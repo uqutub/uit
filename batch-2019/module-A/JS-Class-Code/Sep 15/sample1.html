@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        getPercentage(85);
+
+        function getPercentage(grade) {
+            switch (true) {
+                case grade > 79 && grade <= 100: {
+                    alert("You got A+ grade");
+                    if (grade >= 95) {
+                        alert("You are super man!")
+                    }
+                    break;
+                }
+                case (grade > 69 && grade <= 79): {
+                    alert("You got A grade");
+                    break;
+                }
+                case grade > 59 && grade <= 69: {
+                    alert("You got B grade");
+                    break;
+                }
+                default: {
+                    alert("Sorry!");
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // setTimeout(function(){
+        //     console.log("Yahooo...!");
+        // }, 1500); 
+
+
+        // setTimeout(cb1,1500);
+
+        // function cb1(){
+        //     console.log("Ye bhi chl gaya!");
+        // }
+
+
+        // setTimeout(function () {
+        //     var students = ['a', 'b', 'c'];
+        //     console.log("From function 1, All Students "+ students);
+
+        //     setTimeout(function () {
+        //         console.log("From function 2, Top student "+ students[0]);
+        //     }, 1000);
+        // }, 1000);
+
+
+        setTimeout(func1CB, 1000);
+
+        function func1CB(){
+            var students = ['a', 'b', 'c'];
+            console.log("From function 1, All Students "+ students);
+            setTimeout(function(){
+                func2CB(students);
+            }, 1000);
+        }
+
+        function func2CB(studentList){
+            console.log("From function 2, Top student "+ studentList[0]);
+
+        }
+
+    </script>
+</body>
+
+</html>

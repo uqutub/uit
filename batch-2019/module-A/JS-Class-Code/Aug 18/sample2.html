@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var userCity = "karachi";
+        var ans = userCity.slice(0,1).toUpperCase() + userCity.slice(1)
+        // alert(ans);
+
+        var userMonth = prompt("Enter your bday month");
+        var monthLen = userMonth.length;
+        if(monthLen > 3){
+            alert("Your birthday month is: " + userMonth.slice(0, 3))
+        }
+*/
+
+        /*
+                var userText = "I do not like war because it hurts";
+                for(var i=0; i< userText.length;i++){
+                    if(userText.slice(i , i+3) === "war"){
+                        // alert("war exists");
+                    }
+                }
+        */
+
+        /*
+                var userText = "I am a human and I like mango";
+                var changedText = ""
+                for(var i=0; i<userText.length; i++){
+                    if(userText.slice(i, i + 4) === 'like'){
+                        alert(i)
+                        changedText = userText.slice(0,i) + "do not " + userText.slice(i);
+                    }
+                }
+                alert(changedText);
+        */
+
+        var userText = "I am a human and I like mango";
+        var ind1 = userText.indexOf("human");
+        var ind2 = userText.indexOf("I");
+        var ind3 = userText.lastIndexOf("I")
+        // alert(ind1)
+        // alert(ind2)
+        // alert(ind3)
+
+        if(ind1 === -1){
+            alert("Human does not exist");
+        }
+        else{
+            alert("Human exists")
+        }
+
+        /*
+        if(ind1 > -1){
+            alert("Human exists!");
+        }
+        */
+    </script>
+</body>
+
+</html>

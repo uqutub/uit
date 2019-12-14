@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function loadMoreItems(){
+            var listRef = document.getElementById("list1");
+            var currentListItems = listRef.innerHTML;
+            var newListItems = `
+                <li>Item 5</li>
+                <li>Item 6</li>
+                <li>Item 7</li>
+                <li>Item 8</li>`;
+            
+            listRef.innerHTML = currentListItems + newListItems;
+            console.log(listRef);
+        }
+
+        function loadMoreItems2(){
+            var listRef = document.getElementById("list1");
+            var newListItems = `
+                <li>Item 5</li>
+                <li>Item 6</li>
+                <li>Item 7</li>
+                <li>Item 8</li>`;
+            
+            listRef.innerHTML += newListItems;
+            //listRef.innerHTML = listRef.innerHTML + newListItems;
+        }
+
+    </script>
+    <ul id="list1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <button onclick="loadMoreItems()">Load More</button>
+    <button onclick="loadMoreItems2()">Load More Smartly</button>
+
+</body>
+</html>

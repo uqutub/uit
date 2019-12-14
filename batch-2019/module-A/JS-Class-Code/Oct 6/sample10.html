@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getDetails() {
+            var divRef = document.getElementById("div2");
+            console.log(divRef);
+            var spanRef = divRef.getElementsByTagName("span");
+            console.log(spanRef);
+            spanRef[0].style.color = "red";
+            spanRef[1].style.color = "red";
+        } 
+    </script>
+
+    <div>
+        <p>This is my paragraph 1a
+            <span>This is span inside paragraph</span>
+        </p>
+        <p>This is my paragraph 1b
+            <span>This is span inside paragraph</span>
+        </p>
+    </div>
+    <div id="div2">
+        <p>This is my paragraph 2a
+            <span>This is span 2 inside paragraph</span>
+            <!--Color Red-->
+        </p>
+        <p>This is my paragraph 2b
+            <span>This is span inside paragraph</span>
+            <!--Color Red-->
+        </p>
+    </div>
+    <div>
+        <p>This is my paragraph 3a
+            <span>This is span 3 inside paragraph</span>
+        </p>
+        <p>This is my paragraph 3b
+            <span>This is span inside paragraph</span>
+        </p>
+    </div>
+
+    <button onclick="getDetails()">Get Details</button>
+</body>
+
+</html>

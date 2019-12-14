@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getTeachers() {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    var teachers = ['a','b','c','d','e'];
+                    // resolve(teachers)
+                    reject("No data found!");
+                }, 1500);
+            });
+        }    
+
+        getTeachers().then(function(response){
+            console.log("All teachers list: ",response);
+        })
+
+        //Uncaught (in promise) 
+        // .catch(function(err){
+        //     console.log("Inside error state: ",err);
+        // })
+    </script>
+</body>
+
+</html>
