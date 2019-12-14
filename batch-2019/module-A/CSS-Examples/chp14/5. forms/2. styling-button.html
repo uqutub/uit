@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Styling Submit Button</title>
+	<style>
+		input {
+			display: block;
+			margin-top: 20px;
+            font-size: 30px;
+		}
+		
+		input#submit {
+			color: #444444;
+			text-shadow: 0px 1px 1px #ffffff;
+			border-bottom: 2px solid #b2b2b2;
+	
+			background-color: #b9e4e3;
+			background: -webkit-gradient(linear, left top, left bottom, from(#beeae9), to(#a8cfce));
+			background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+			background: -o-linear-gradient(top, #beeae9, #a8cfce);
+			background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+		}
+		
+		input#submit:hover {
+			color: #333333;
+			border: 1px solid #a4a4a4;
+			border-top: 2px solid #b2b2b2;
+			background-color: #a0dbc4;
+			background: -webkit-gradient(linear, left top, left bottom, from(#a8cfce), to(#beeae9));
+			background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+			background: -o-linear-gradient(top, #a8cfce, #beeae9);
+			background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+		}
+		
+		input#submit2 {
+			color: #444444;
+			text-shadow: 0px 1px 1px #ffffff;
+			border-bottom: 2px solid #b2b2b2;
+			background: red;
+			background: -webkit-linear-gradient(left top, red, yellow);
+			/* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(bottom right, red, yellow);
+			/* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(bottom right, red, yellow);
+			/* For Firefox 3.6 to 15 */
+			background: linear-gradient(top bottom right, red, yellow);
+			/* Standard syntax */
+		}
+		
+		input#submit3 {
+			background: red;
+			/* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(red, yellow, green);
+			/* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(red, yellow, green);
+			/* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(red, yellow, green);
+			/* For Firefox 3.6 to 15 */
+			background: linear-gradient(red, yellow, green);
+			/* Standard syntax */
+		}
+	</style>
+</head>
+
+<body>
+
+	<input type="submit" id="submit" value="Register Button 1" />
+	<input type="submit" id="submit2" value="Register Button 2" />
+	<input type="submit" id="submit3" value="Register Button 3" />
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Border Spacing / Collape</title>
+	<style>
+		td {
+			background-color: #0088dd;
+			padding: 15px;
+			border: 2px solid #000000;
+		}
+		table.one {
+			border-spacing: 5px 15px;
+		}
+		table.two {
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Border Spacing</h1>
+	<table class="one">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+		</tr>
+        <tr>
+			<td></td>
+			<td>5</td>
+		</tr>
+	</table>
+	<hr />
+	<h1>Border Collapse</h1>
+	<table class="two">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pseudo-elements</title>
+    <style>
+        p.intro1::first-letter {
+            color: #ff0000;
+            font-size: 200%;
+        }
+        
+        p.intro2::first-line {
+            font-weight: bold;
+        }
+        
+        h1::before {
+            content: url('images/smiley_.gif');
+        }
+        
+        h1::after {
+            content: url('images/smiley_.gif');
+        }
+        
+        h2::selection {
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    What are Pseudo-Elements? <br> A CSS pseudo-element is used to style specified parts of an element.<br> For example, it can be used to:<br> Style the first letter, or line, of an element<br> Insert content before, or after, the content of an element<br>
+
+    <h1>Heading 1</h1>
+    <p class="intro1">
+        CSS introduces both pseudo- elements and pseudo-classes. A pseudo-element acts like an extra element is in the code. In the case of the :first-letter and :first-line pseudo elements, it is as if there is an extra element around the first letter or the
+        first line which can have its own styles applied.
+    </p>
+    <p class="intro2">
+        CSS introduces both pseudo- elements and pseudo-classes. A pseudo-element acts like an extra element is in the code. In the case of the :first-letter and :first-line pseudo elements, it is as if there is an extra element around the first letter or the
+        first line which can have its own styles applied.
+    </p>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+    <h2>Test for selection</h2>
+
+</body>
+
+</html>

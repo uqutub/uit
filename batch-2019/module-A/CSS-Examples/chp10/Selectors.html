@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Selectors</title>
+</head>
+
+<style>
+    h1+p {
+        color: red;
+    }
+</style>
+<!--
+    /* Universal Selector */
+    * {
+        color: red;
+    }
+
+    /* Type Selector */
+    h1, h2, p {
+        color: green;
+    }
+
+    /* Class Selector */
+    .note {
+        color: red;
+    }
+    p.note {
+        color: green;
+    }
+
+    /* ID Selector */
+    #introduction {
+        color: red;
+    }
+
+    /* Child Selector
+    /*Matches an element that is a direct child of another*/
+    li>a {
+        color: red;
+    }
+
+    /* Descendant Selector 
+    not just a direct child of that element*/
+    p a {
+        color: red;
+    }
+
+    /* Adjacent Sibling Selector 
+    next sibling of another */
+    h1+p {
+        color: red;
+    }
+
+    /* General Sibling Selector
+    sibling of another, although it does not have to be the directly preceding element */
+    h1~p {
+        color: red;
+    }
+
+    div { border: 1px solid grey; }
+ -->
+
+
+<body>
+    <p class="abc">
+        <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <h1 id="top">"H1": Kitchen Garden Calendar</h1>
+    <p id="introduction">"P": Here you can read our handy guide about what to do when.</p>
+    <p>"P": Here you can read our handy guide about what to do when.</p>
+    <span>SPAN  ----  kdjdkdj</span>
+    <h3>Heading 3</h3>
+    <p id="introduction1">"P": Here you can read our handy guide about what to do when.</p>
+    <h2 class="note">"H2": Spring</h2>
+    <p>"P": ---paragraph after H2 element---</p>
+    <ul>
+        <li>
+            <a href="mulch.html">"A": 1 Spring mulch vegetable beds</a>
+            <span>
+                "SPAN": <a href="mulch.html">"A": 2 A2</a>
+            </span>
+
+        </li>
+        <li><a href="potato.html">
+						 Plant out early potatoes</a></li>
+        <li><a href="tomato.html">
+						 Sow tomato seeds</a></li>
+        <li><a href="beet.html">
+						 Sow beet seeds</a></li>
+        <li><a href="zucchini.html">
+						 Sow zucchini seeds</a></li>
+        <li><a href="rhubarb.html">
+						 Deadhead rhubarb flowers</a></li>
+    </ul>
+    <p class="note">
+        "P": This page was written by
+        <a href="mailto:ivy@example.org">
+				 ivy@example.org</a> for
+        <a href="http://www.example.org">Example</a>.
+    </p>
+    <p>
+        "P": <a href="#top">"A": Top of page</a>
+        <span>
+            SPAN: <a href="#top">"A": Top of page</a>
+            <em><a href="#top">"A": Top of page</a></em>
+        </span>
+    </p>
+    <div>
+        "DIV": Yahooo!
+        <p>
+            "P": is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+        </p>
+    </div>
+</body>
+
+</html>
