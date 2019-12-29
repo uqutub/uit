@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Border-Image</title>
+	<style>
+		h3 {
+			color: red;
+		}
+		
+		img {
+			border: 2px solid grey;
+		}
+		
+		p.oneA {
+			height: 50px;
+			border: 5px solid transparent;
+			-moz-border-image: url("border.png") 11 11 11 11 stretch;
+			/* stretch is default value*/
+			-webkit-border-image: url("border.png") 11 11 11 11 stretch;
+			border-image: url("border.png") 11 11 11 11 stretch;
+		}
+		
+		p.oneB {
+			height: 50px;
+			border: 10px solid transparent;
+			-moz-border-image: url("border.png") 0 0 11 0 stretch;
+			/* stretch is default value*/
+			-webkit-border-image: url("border.png") 0 0 11 0 stretch;
+			border-image: url("border.png") 0 0 11 0 stretch;
+		}
+		
+		p.two {
+			height: 50px;
+			width: 200px;
+			border: 10px solid transparent;
+			-moz-border-image: url("border.png") 11 11 11 11 round;
+			-webkit-border-image: url("border.png") 11 11 11 11 round;
+			border-image: url("border.png") 11 11 11 11 round;
+		}
+		
+		p.three {
+			height: 50px;
+			border: 10px solid transparent;
+			-moz-border-image: url("border.png") 11 11 11 11 repeat;
+			-webkit-border-image: url("border.png") 11 11 11 11 repeat;
+			border-image: url("border.png") 11 11 11 11 repeat;
+		}
+		
+		#borderimg {
+			border: 10px solid transparent;
+			padding: 15px;
+			-webkit-border-image: url('border.png') 30 stretch;
+			-o-border-image: url('border.png') 30 stretch;
+			border-image: url('border.png') 30 stretch;
+		}
+		
+		#borderimg1 {
+			border: 10px solid transparent;
+			padding: 15px;
+			-webkit-border-image: url(border.png) 50 round;
+			-o-border-image: url(border.png) 50 round;
+			border-image: url(border.png) 50 round;
+		}
+		
+		#borderimg2 {
+			border: 10px solid transparent;
+			padding: 15px;
+			-webkit-border-image: url(border.png) 20% round;
+			-o-border-image: url(border.png) 20% round;
+			border-image: url(border.png) 20% round;
+		}
+		
+		#borderimg3 {
+			border: 10px solid transparent;
+			padding: 15px;
+			-webkit-border-image: url(border.png) 30% round;
+			-o-border-image: url(border.png) 30% round;
+			border-image: url(border.png) 30% round;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- <h3>The border-image property allows you to specify an image to be used instead of the normal border around an element.</h3>
+	<img src="supports.jpg" alt="supports"> -->
+	<hr>
+	<p class="oneA">
+		This is class One A
+	</p>
+	<hr />
+	<p class="oneB">
+		This is class One B Border Only on Bottom
+	</p>
+	<hr />
+	<p class="two">
+		This is class Two
+	</p>
+	<hr />
+	<p class="three">
+		This is class Three
+	</p>
+	<hr />
+	<p id="borderimg">Here, the middle sections of the image are repeated to create the border.</p>
+	<hr />
+	<p id="borderimg1">border img 1</p>
+	<hr />
+	<p id="borderimg2">border img 2</p>
+	<hr />
+	<p id="borderimg3">border img 3</p>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Styling Fieldsets</title>
+	<style>
+		fieldset#style {
+			width: 350px;
+			border: 1px solid #dcdcdc;
+			border-radius: 10px;
+			padding: 20px;
+			text-align: right;
+		}
+		
+		fieldset#style legend {
+			background-color: #efefef;
+			border: 1px solid #dcdcdc;
+			border-radius: 10px;
+			padding: 10px 20px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		
+		div {
+			margin-right: 20%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Styling Fieldsets Article & Legends</h1>
+
+	<form>
+		<fieldset id="style">
+			<legend>Personal Information</legend>
+			<div>
+				Name: <input type="text"><br/> 
+                Email: <input type="text"><br/> 
+                Date of birth: <input type="text">
+			</div>
+		</fieldset>
+	</form>
+<!--
+	<hr />
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div>
+			Name: <input type="text"><br/> 
+            Email: <input type="text"><br/>
+            Date of birth: <input type="text">
+		</div>
+	</fieldset>-->
+
+	</body>
+
+</html>

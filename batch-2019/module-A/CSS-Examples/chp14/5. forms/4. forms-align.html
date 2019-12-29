@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aligning Form Article Controls</title>
+	<style>
+		form {
+			width: 300px;
+		}
+		
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+		
+		input[type=text]:focus {
+			border: 3px solid #555;
+		}
+		
+		input#woborder {
+			border: none;
+			border-bottom: 2px solid red;
+		}
+		
+		input#search {
+			background-color: white;
+			background-image: url('images/web.png');
+			background-size: 20px;
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			padding-left: 40px;
+		}
+		
+		input[type=button],
+		input[type=submit],
+		input[type=reset] {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+        .submit {
+	        text-align: right;
+        }
+	</style>
+</head>
+
+<body>
+	<form>
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="fname">
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lname">
+		<label for="lname">Without Border Textbox</label>
+		<input type="text" id="woborder" name="woborder">
+		<label for="lname">Search Box / Website</label>
+		<input type="text" id="search" name="search" placeholder="www.abc.com">
+        <div class="submit">
+            <input type="button" value="Submit">
+        </div>
+	</form>
+
+</body>
+
+</html>

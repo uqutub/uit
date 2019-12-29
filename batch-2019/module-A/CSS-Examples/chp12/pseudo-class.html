@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pseudo-class</title>
+    <style>
+        a:link {
+            color: yellowgreen;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: black;
+        }
+        
+        a:hover {
+            color: deeppink;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: darkcyan;
+        }
+        
+        div:hover {
+            background-color: blue;
+            color: yellow;
+        }
+        
+        p:first-child {
+            color: greenyellow;
+        }
+        
+        p i:first-child {
+            color: blue;
+        }
+        
+        input {
+            padding: 6px 12px 6px 12px;
+            border: 1px solid #665544;
+            color: darkviolet;
+        }
+        
+        input.text {
+            color: darkred;
+        }
+        
+        input.text:focus {
+            color: lightseagreen;
+            font-size: 150%;
+        }
+        
+        input.submit:hover {
+            background-color: yellow;
+        }
+        
+        input.submit:active {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        A pseudo-class is used to define a special state of an element. <br> For example, it can be used to: <br>
+        <ul>
+            <li>
+                Style an element when a user mouses over it
+            </li>
+            <li>
+                Style visited and unvisited links differently
+            </li>
+            <li>
+                Style an element when it gets focus
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <a href="#">LINK................</a>
+    </p>
+
+    <div>
+        Pseudo-classes and CSS Classes, Pseudo-classes can be combined with CSS classes, When you hover over the link in the example, it will change color
+    </div>
+
+
+    <p>
+        <input class="text" type="text" name="search" value="" placeholder="search .....">
+        <input class="submit" type="submit" name>
+    </p>
+
+    <p>
+        <i>Italic</i>
+        <br>
+        <b>Bold</b>
+    </p>
+
+</body>
+
+</html>

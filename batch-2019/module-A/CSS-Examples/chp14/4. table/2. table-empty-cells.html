@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Empty Cells</title>
+	<style>
+		td {
+			border: 1px solid #0088dd;
+			padding: 15px;
+		}
+		table.one {
+			empty-cells: show;
+		}
+		table.two {
+			empty-cells: hide;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Table Show Empty Cells</h1>
+	<table class="one">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+			
+		</tr>
+	</table>
+	<hr />
+	<h1>Table Hide Empty Cells</h1>
+	<table class="two">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>3</td>
+			<td></td>			
+		</tr>
+	</table>
+</body>
+
+</html>

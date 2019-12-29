@@ -1,0 +1,21 @@
+<style>
+    .exampleserif {
+        font-family: Times, "Times New Roman", Georgia, serif;
+    }
+
+    .examplesansserif {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    .examplemonospace {
+        font-family: "Lucida Console", Courier, monospace;
+    }
+
+    .examplecursive {
+        font-family: cursive;
+    }
+
+    .examplefantasy {
+        font-family: fantasy;
+    }
+</style>
