@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAA04YIkrR5S3CAWpTOXhaVjQ52PrxgT_M",
+            authDomain: "uit-19a.firebaseapp.com",
+            databaseURL: "https://uit-19a.firebaseio.com",
+            projectId: "uit-19a",
+            storageBucket: "uit-19a.appspot.com",
+            messagingSenderId: "1007934691306",
+            appId: "1:1007934691306:web:e9bfc9584a315a6ffdc493"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the database service
+        var database = firebase.database();
+        var userRef = database.ref("users/")
+
+        var users = [];
+        //Get realtime data
+        database.ref("users/").on('value', function (snapshot) {
+            var tableRef = document.getElementById("userTable");
+            tableRef.innerHTML = "";
+
+            // console.log(snapshot.val())
+            if (!snapshot.val())
+                return;
+
+            users = Object.values(snapshot.val());
+            var j = 0;
+            for (key in snapshot.val()) {
+                users[j++].key = key
+            }
+            console.log(users);
+
+            for (var i = 0; i < users.length; i++) {
+                tableRef.innerHTML += `
+                    <tr>
+                        <td>${users[i].name}</td>
+                        <td>${users[i].gender}</td>
+                        <td><button onclick="updateUser('${users[i].key}')">Edit</button></td>
+                        <td><button onclick="deleteUser('${users[i].key}')">Delete</button></td>
+                    </tr>`
+            }
+        });
+
+        function addUser() {
+
+            var username = prompt("Enter username");
+            var userGender = prompt("Enter Gender");
+
+            // Getting a unique key to push new record
+            var newUserKey = firebase.database().ref().child('users').push().key;
+
+            database.ref("users/" + newUserKey).set({
+                name: username,
+                gender: userGender
+            });
+        }
+
+        function updateUser(userKey) {
+            var username = prompt("Enter username");
+            var userGender = prompt("Enter Gender");
+
+            database.ref("users/" + userKey).update({
+                name: username,
+                gender: userGender
+            });
+        }
+
+        function deleteUser(userKey) {
+            database.ref("users/" + userKey).remove()
+        }
+
+    </script>
+
+    <button onclick="addUser()">Add User</button>
+
+    <br />
+    <table id="userTable" border="2">
+    </table>
+</body>
+
+</html>
